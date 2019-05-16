@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;    
+
+int main(void) {
+    int i = 0;
+    double x;
+    double max = -1;
+    double score = 0;
+    double total = 0;
+    cin >> x;
+    for(i; i < x; i++) {
+        cin >> score;
+        if(score > max) {
+            max = score;
+            total += score;
+        }
+        else {total += score;}
+    }
+    total = total/max*100/x;
+    cout << total;
+    return 0;
+}
